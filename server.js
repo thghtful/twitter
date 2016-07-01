@@ -1,3 +1,10 @@
+var express = require('express');
+var app = express();
+
+var port = process.env.PORT || 8080;
+
+app.set('view engine', 'ejs');
+
 var Twit = require('twit');
 
 
@@ -120,3 +127,8 @@ setInterval(
   post_tweet(),
   10000
 );
+
+
+ssh-keygen -t rsa -b 4096 -C thghtful@gmail.com
+# Creates a new ssh key, using the provided email as a label
+Generating public/private rsa key pair.
