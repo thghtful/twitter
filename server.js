@@ -115,18 +115,17 @@ var ending = endings[Math.floor(Math.random() * endings.length)];
 
 var tweet = quote + ending;
 
-function post_tweet (){
+
 T.post('statuses/update', { status: tweet }, function(err, data, response) {
 	console.log(data);
 	});
-}
+
 	
 //console.log(tweet);
 
-setInterval(
-  post_tweet(),
-  10000
-);
 
 
 
+app.listen(port, function() {
+    console.log('Our app is running on http://localhost:' + port);
+});
