@@ -129,9 +129,6 @@ setInterval(
 );
 
 
-ssh-keygen -t rsa -b 4096 -C thghtful@gmail.com
-# Creates a new ssh key, using the provided email as a label
-Generating public/private rsa key pair.
 
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
