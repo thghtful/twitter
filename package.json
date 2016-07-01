@@ -1,5 +1,5 @@
 {
-  "name": "twitter",
+  "name": "twitterbot",
   "description": "A bot that mixes Einstein quotes with controverial topics",
   "main": "server.js",
   "scripts": {
